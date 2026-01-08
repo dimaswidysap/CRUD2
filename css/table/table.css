@@ -1,6 +1,6 @@
 .container-table {
   width: 100%;
-  background-color: #84e8e2;
+  background-color: #ffecec;
   padding: 0.5rem;
   border-radius: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -14,7 +14,7 @@
 }
 .adiedja td {
   padding: 1rem 0;
-  background-color: #b0fffa;
+  background-color: #ffffff;
 }
 .adiedja td:nth-child(1) {
   padding: 0 0 0 0.5rem;

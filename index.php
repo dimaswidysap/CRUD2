@@ -9,10 +9,15 @@
 </head>
 <body>
 
+    <section class="dnuyiha">
+        <a href="landing-page.html">Log Out</a>
+    </section>
+
     <main class="main-container">
         <section class="tambah-transaksi">
             <a href="tambah-transaksi.php"><span></span><span>Tambah Transaksi</span></a>
         </section>
+        
         <section class="container-table">
             <table>
                 <tr class="adiedja">

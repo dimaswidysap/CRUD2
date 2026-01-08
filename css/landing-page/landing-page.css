@@ -1,0 +1,302 @@
+/* Reset Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-page: #fdfbf7;
+  --primary: #1e293b;
+  --accent-purple: #e0e7ff;
+  --card-blue: #dbeafe;
+  --card-green: #dcfce7;
+  --card-dark: #334155;
+  --btn-color: #ffffff;
+}
+
+.anbsuk {
+  padding: 0.3rem 1rem;
+  background-color: var(--accent-purple);
+  font-size: 1.2em !important;
+  border-radius: 5px;
+  font-weight: 900 !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--primary);
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary);
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.btn-nav {
+  background: var(--primary);
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+/* Container Utama */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* HERO SECTION - Meniru bagian atas gambar referensi */
+.hero-section {
+  background-color: var(--accent-purple);
+  border-radius: 40px; /* Sudut sangat bulat seperti referensi */
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 50%;
+  z-index: 2;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.hero-visual {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-icon {
+  font-size: 12rem;
+  color: rgba(255, 255, 255, 0.5);
+  transform: rotate(-15deg);
+}
+
+/* Kartu Melayang (Dekorasi) */
+.floating-card {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.floating-card i {
+  color: #10b981;
+}
+
+/* FEATURES GRID - Meniru 3 kartu di bawah */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr; /* Pembagian kolom: kecil, kecil, lebar */
+  gap: 20px;
+  min-height: 350px;
+  place-content: center;
+}
+
+.card {
+  border-radius: 30px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-top {
+  display: flex;
+  justify-content: flex-end; /* Tombol panah di kanan atas */
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Warna Kartu */
+.color-1 {
+  background: linear-gradient(to bottom right, #bfdbfe, #93c5fd);
+  color: #1e3a8a;
+}
+.color-2 {
+  background: #f3f4f6;
+  color: #1f2937;
+} /* Abu-abu hangat */
+.color-3 {
+  background: #1e293b;
+  color: #ffffff;
+} /* Gelap */
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.icon-box {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Kartu Lebar (Kanan) */
+.card-wide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wide-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.wide-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.wide-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wide-icon {
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* Form Input di Kartu Lebar */
+.input-group {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.input-group input {
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  width: 100%;
+  outline: none;
+}
+
+.input-group button {
+  background: white;
+  color: var(--primary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr; /* Jadi 1 kolom ke bawah */
+  }
+
+  .card-wide {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wide-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
